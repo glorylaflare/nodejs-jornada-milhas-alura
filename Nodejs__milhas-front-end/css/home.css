@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-size: 1500%;
+    background: #faf2f3;
+    background: linear-gradient(180deg, rgba(250,242,243,1) 86%, rgba(76,206,255,1) 95%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+
+    margin: 10px 0;
+}
+
+.header-title {
+    margin-left: 40%;
+}
+
+.header-title > i {
+    margin-right: 5px;
+}
+
+.header-title > b {
+    font-weight: 800;
+}
+
+.header-title > p {
+    margin: 8px 0 3px 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.log {
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+    margin-right: 3%;
+}
+
+.log p {
+    background: #3679f5;
+    color: white;
+}
+
+.log p + p {
+    background: transparent;
+    color: black;
+}
+
+.log p {
+    padding: 4px 20px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+.search-bar {
+    padding: 6px 40px;
+    width: 100%;
+    border-top: 1.4px solid black;
+    border-bottom: 1.4px solid black;
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input > p {
+    display: flex;
+    align-items: center;
+    justify-content: row;
+    gap: 25px;
+}
+
+.input > p > i {
+    font-size: 20px;
+}
+
+.input > p > input {
+    color: rgb(24, 24, 24);
+    width: 180vh;
+    height: 6vh;
+    padding-left: 20px;
+    font-size: 18px; 
+    
+    border: none;
+    background: transparent;
+}
+
+.input > button {
+    margin-left: 20px;
+    height: 35px;
+    width: 10%;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 0 0 5px 5px;
+    background: transparent;
+}
+
+.input > button:active {
+    border-bottom: 1px solid black;
+}
+
+.locations, .depoimentos {
+    margin: 25px 150px;
+}
+
+.locations .title, .depoimentos > p {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card .destiny #list-destiny, #list-depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+#list-destiny > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 1px solid #bababa;
+    border-radius: 10px;
+
+    gap: 10px;
+}
+
+#list-destiny > li >  img {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    border-radius: 10px 10px 0 0 ;
+}
+
+#list-destiny > li > p {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#list-destiny > li > span {
+    font-size: 25px;
+    font-weight: 600;
+    color: darkslategray;
+}
+
+#list-destiny > li > button {
+    background-color: #261b71;
+    color: white;
+    padding: 10px 60px;
+    margin-bottom: 35px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+#list-depoimentos > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+
+    border-radius: 8px;
+    background-color: #ededed;
+}
+
+#list-depoimentos > li > img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+.depoimento-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.depoimento-text > span {
+    font-size: 14px;
+}
+
+.depoimento-text > p {
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-top: 150px;
+    background-color: #1d1b20;
+    padding: 50px 150px 50px 150px;
+    color: white;
+}
+
+.footer > .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infos > .header-footer {
+    font-size: 25px;
+}
+
+.infos > .header-footer > i {
+    margin-right: 5px;
+}
+
+
+.infos > span {
+    font-size: 13px;
+}
+
+.sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sociais-logos {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 26px;
+}
+
+.sociais-logos > i {
+    cursor: pointer;
+}
+
+/* Detalhes */
+.imagem-header {
+    border-top: 1px solid black;
+}
+
+.imagem-header > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 1px 0;
+    mask-image: initial;
+    -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
+}
+
+.inner-container {
+    margin: 40px 90px 0 170px
+}
+
+.inner-container h1 {
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.inner-container h2 {
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 600px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.destiny-description {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.inner-container button {
+    display: flex;
+    margin: 50px 0 0 0;
+
+    padding: 4px 10px 4px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 0 0 5px 5px;
+    background: transparent;
+}
+
+.inner-container > button:active {
+    border-bottom: 1px solid black;
+}

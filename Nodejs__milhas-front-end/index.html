@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">
+            <i class="fa-regular fa-compass"></i>
+            <b>jornada</b>milhas
+            <p>Encontre seu próximo destino</p>
+        </div>
+        <div class="log">
+            <p>Cadastre-se</p>
+            <p>Entrar</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="search-bar">
+            <div class="input">
+                <p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquise um destino" name="destino" id="pesquisa-destino">
+                </p>
+                <button onclick="buscarDestino()">Buscar</button>
+            </div>
+        </div>
+        <div class="locations">
+            <div class="title">
+                <p>Destinos</p>
+            </div>
+            <div class="card">
+                <div class="destiny">
+                    <ul id="list-destiny"></ul>
+                    <!-- <img src="https://media.gettyimages.com/id/1401359847/pt/foto/lisbon-cityscape-with-st-george-castle-at-sunset-portugal.jpg?s=612x612&w=gi&k=20&c=HgP1aJZpvRvXqMNHoDI9P93iAxPTHaK9v3mcb3ao8Mg=" alt="lisboa">
+                    <p>Lisboa</p>
+                    <span>R$ 500</span> -->
+                </div>
+                </div>
+            </div>
+            <div class="depoimentos">
+                <p>Depoimentos</p>
+                <ul id="list-depoimentos"></ul>
+                <!-- <img src=${e.imagem} alt=${e.autor}>
+                <span>R$ ${e.depoimento}</span>
+                <p>${e.autor}</p> -->
+            </div>
+        </div>
+    </div>
+    <div class="container-details" style="display: none;">
+        <div class="imagem-header"></div>
+        <div class="inner-container">
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="infos">
+            <div class="header-footer">
+                <i class="fa-regular fa-compass"></i>
+                <b>jornada</b>milhas
+            </div>
+            <span>Horário de atendimento: 08h - 20h (Segunda a Sábado)</span>
+            <span>Desenvolvido por Alura e GloryLaFlare. Projecto fictício sem fins comerciais.</span>
+        </div>
+        <div class="sociais">
+            <p>Acesse nossas redes:</p>
+            <div class="sociais-logos">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
